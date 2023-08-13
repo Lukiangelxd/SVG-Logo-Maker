@@ -1,7 +1,13 @@
 
 const fs = require('fs');
-const { Triangle, Circle, Square } = require('./lib/shapes');
-const { validateColor, convertToHex } = require('./lib/colorUtils');
+const { Triangle, Circle, Square } = require('./lib/shape.js');
+const { validateColor, convertToHex } = require('./lib/shapeColors.js');
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
 function promptUser(question) {
     return new Promise(resolve => {
@@ -57,7 +63,6 @@ promptUser('Enter up to three characters: ')
         console.error('An error occurred:', error);
         rl.close();
     });
-
 
 
 
