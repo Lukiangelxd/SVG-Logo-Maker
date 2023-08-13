@@ -1,68 +1,65 @@
-
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shape.js');
 const { validateColor, convertToHex } = require('./lib/shapeColors.js');
-const readline = require('readline');
-
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-function promptUser(question) {
-    return new Promise(resolve => {
-        rl.question(question, answer => {
-            resolve(answer);
-        });
-    });
-}
+const inquirer = require('inquirer');
 
 function generateLogo(text, textColor, ShapeClass, shapeColor) {
-    if (!validateColor(textColor) || !validateColor(shapeColor)) {
-        console.log('Invalid color format');
-        rl.close();
-        return;
-    }
+  if (!validateColor(textColor) || !validateColor(shapeColor)) {
+    console.log('Invalid color format');
+    return;
+  }
 
-    const shapeSVG = new ShapeClass().getSVG(shapeColor);
+  const shapeSVG = new ShapeClass().getSVG(shapeColor);
 
-    const logoSVG = `
-      <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-        ${shapeSVG}
-        <text x="150" y="100" fill="${convertToHex(textColor)}" font-size="24" text-anchor="middle">${text}</text>
-      </svg>
-    `;
+  const logoSVG = `
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+      ${shapeSVG}
+      <text x="150" y="100" fill="${convertToHex(textColor)}" font-size="24" text-anchor="middle">${text}</text>
+    </svg>
+  `;
 
-    fs.writeFileSync('logo.svg', logoSVG);
-    console.log('Generated logo.svg');
-    rl.close();
+  fs.writeFileSync('logo.svg', logoSVG);
+  console.log('Generated logo.svg');
 }
 
-promptUser('Enter up to three characters: ')
-    .then(text => promptUser('Enter text color (keyword or hex): ')
-        .then(textColor => promptUser('Choose a shape (circle, triangle, square): ')
-            .then(shapeChoice => {
-                const shapeColorPrompt = 'Enter shape color (keyword or hex): ';
-                const ShapeClass = {
-                    circle: Circle,
-                    triangle: Triangle,
-                    square: Square
-                }[shapeChoice.toLowerCase()];
+inquirer
+  .prompt([
+    {
+      type: 'input',
+      name: 'text',
+      message: 'Enter up to three characters:',
+    },
+    {
+      type: 'input',
+      name: 'textColor',
+      message: 'Enter text color (keyword or hex):',
+    },
+    {
+      type: 'list',
+      name: 'shapeChoice',
+      message: 'Choose a shape:',
+      choices: ['circle', 'triangle', 'square'],
+    },
+    {
+      type: 'input',
+      name: 'shapeColor',
+      message: 'Enter shape color (keyword or hex):',
+    },
+  ])
+  .then(answers => {
+    const { text, textColor, shapeChoice, shapeColor } = answers;
+    const ShapeClass = {
+      circle: Circle,
+      triangle: Triangle,
+      square: Square
+    }[shapeChoice.toLowerCase()];
 
-                if (ShapeClass) {
-                    return promptUser(shapeColorPrompt)
-                        .then(shapeColor => generateLogo(text, textColor, ShapeClass, shapeColor));
-                } else {
-                    console.log('Invalid shape choice');
-                    rl.close();
-                }
-            })
-        )
-    )
-    .catch(error => {
-        console.error('An error occurred:', error);
-        rl.close();
-    });
-
-
-
+    if (ShapeClass) {
+      generateLogo(text, textColor, ShapeClass, shapeColor);
+    } else {
+      console.log('Invalid shape choice');
+    }
+  })
+  .catch(error => {
+    console.error('An error occurred:', error);
+  });
