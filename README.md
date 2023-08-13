@@ -30,6 +30,10 @@ See demo below:
 https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
 
+- pic of generated svg logo
+
+![example-jest-test]("./../SVG-logo.jpg)
+
 ## Contributing
 The project is open for contributions. If you would like to contribute, create a new branch from the main and add any updates as deemed necessary. If you should find any issues with the code, please open a 'New Issue' from https://github.com/grosario1/gr-SVG_Logo_Maker/issues and these request can be review and updated accordingly.
 
