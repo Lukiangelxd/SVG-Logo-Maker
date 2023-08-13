@@ -25,9 +25,9 @@ https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
 <iframe src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="640" height="480" allow="autoplay"></iframe>
 
-[![Demo video](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
+[![Demo video](./Demo-video.jpg)](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
 
-[<img src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="600" height="300"
+[<img src="./Demo-video.jpg" width="600" height="300"
 />](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
 
 
