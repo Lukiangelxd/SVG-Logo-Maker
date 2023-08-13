@@ -50,8 +50,10 @@ You can run a test of the code by using Jest (https://www.npmjs.com/package/jest
   
   ![example-jest-test](https://github.com/grosario1/gr-SVG_Logo_Maker/assets/26330325/cb8121b5-b5ac-499c-abde-9fda19ccbf39)
 
-  Demo video:
+  Jest test Demo video:
 
+ - click on video image below
+  
 [<img src="./test-demo-video.jpg" width="600" height="300"
 />](https://drive.google.com/file/d/1bRX868VSgY_R_48jxgoJ-AXCFt2ZjCZk/view)
 
