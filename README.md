@@ -21,12 +21,13 @@ As shown below, from the repo folder you cloned within the command line, run 'no
 
 See demo below:
 
-https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
-
- - click on video below
+ - click on video image below
+   
 [<img src="./Demo-video.jpg" width="600" height="300"
 />](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
 
+
+https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
 
 ## Contributing
