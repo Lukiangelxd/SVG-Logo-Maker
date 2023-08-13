@@ -31,7 +31,7 @@ You run a test of the code by:
 5. From the Develop folder within command line, run `npx jest`
     
     -  Exmaple output:
-![Example_jest_test](./assets/example-jest-test.jpg)
+![Example_jest_test](../gr-SVG_Logo_Maker/assets/example-jest-test.jpg)
 
 ## Contact Info
 For more questions, feel free to contact me:
