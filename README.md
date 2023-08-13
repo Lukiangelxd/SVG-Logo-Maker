@@ -25,6 +25,13 @@ https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
 <iframe src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="640" height="480" allow="autoplay"></iframe>
 
+[![Demo video](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
+
+[<img src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="600" height="300"
+/>](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
+
+
+
 ## Contributing
 The project is open for contributions. If you would like to contribute, create a new branch from the main and add any updates as deemed necessary. If you should find any issues with the code, please open a 'New Issue' from https://github.com/grosario1/gr-SVG_Logo_Maker/issues and these request can be review and updated accordingly.
 
