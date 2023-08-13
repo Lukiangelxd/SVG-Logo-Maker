@@ -1,15 +1,15 @@
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shape.js');
-const { validateColor, convertToHex } = require('./lib/shapeColors.js');
+const { validateColor, convertToHex, getSVG } = require('./lib/shapeColors.js');
 const inquirer = require('inquirer');
 
-function generateLogo(text, textColor, ShapeClass, shapeColor) {
+function generateLogo(text, textColor, shape, shapeColor) {
   if (!validateColor(textColor) || !validateColor(shapeColor)) {
     console.log('Invalid color format');
     return;
   }
 
-  const shapeSVG = new ShapeClass().getSVG(shapeColor);
+  const shapeSVG = shape.getSVG(getSVG(shapeColor));
 
   const logoSVG = `
     <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +55,8 @@ inquirer
     }[shapeChoice.toLowerCase()];
 
     if (ShapeClass) {
-      generateLogo(text, textColor, ShapeClass, shapeColor);
+      const shapeInstance = new ShapeClass();
+      generateLogo(text, textColor, shapeInstance, shapeColor);
     } else {
       console.log('Invalid shape choice');
     }
