@@ -25,10 +25,32 @@ function generateLogo(text, textColor, ShapeClass, shapeColor) {
     rl.close();
 }
 
-function getUserInput(question) {
-    return new Promise(resolve => {
-        rl.question(question, answer => {
-            resolve(answer);
-        });
+promptUser('Enter up to three characters: ')
+    .then(text => promptUser('Enter text color (keyword or hex): ')
+        .then(textColor => promptUser('Choose a shape (circle, triangle, square): ')
+            .then(shapeChoice => {
+                const shapeColorPrompt = 'Enter shape color (keyword or hex): ';
+                const ShapeClass = {
+                    circle: Circle,
+                    triangle: Triangle,
+                    square: Square
+                }[shapeChoice.toLowerCase()];
+
+                if (ShapeClass) {
+                    return promptUser(shapeColorPrompt)
+                        .then(shapeColor => generateLogo(text, textColor, ShapeClass, shapeColor));
+                } else {
+                    console.log('Invalid shape choice');
+                    rl.close();
+                }
+            })
+        )
+    )
+    .catch(error => {
+        console.error('An error occurred:', error);
+        rl.close();
     });
-}
+
+
+
+
