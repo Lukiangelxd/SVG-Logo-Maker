@@ -24,6 +24,8 @@ See demo below:
 https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
 <iframe src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="640" height="480" allow="autoplay"></iframe>
+[Untitled_ Aug 13 2023 5_25 PM.webm](https://github.com/grosario1/gr-SVG_Logo_Maker/assets/26330325/4b80b85b-de02-4c2f-bb29-905ef9a8aecf)
+
 
 ## Contributing
 The project is open for contributions. If you would like to contribute, create a new branch from the main and add any updates as deemed necessary. If you should find any issues with the code, please open a 'New Issue' from https://github.com/grosario1/gr-SVG_Logo_Maker/issues and these request can be review and updated accordingly.
