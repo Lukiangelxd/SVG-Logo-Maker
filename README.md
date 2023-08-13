@@ -23,12 +23,7 @@ See demo below:
 
 https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/view
 
-<iframe src="https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview" width="640" height="480" allow="autoplay"></iframe>
-[Untitled_ Aug 13 2023 5_25 PM.webm](https://github.com/grosario1/gr-SVG_Logo_Maker/assets/26330325/4b80b85b-de02-4c2f-bb29-905ef9a8aecf)
-
-
-[![Demo video](./Demo-video.jpg)](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
-
+ - click on video below
 [<img src="./Demo-video.jpg" width="600" height="300"
 />](https://drive.google.com/file/d/1YXjoLxkqoY1EIlLtuiwZmtw6vEka4bEl/preview)
 
