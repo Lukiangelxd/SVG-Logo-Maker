@@ -32,7 +32,7 @@ You run a test of the code by:
     
     -  Exmaple output:
   
-![Alt text]("./../assets/example-jest-test.jpg)
+![Alt text]("./assets/example-jest-test.jpg)
 
 ## Contact Info
 For more questions, feel free to contact me:
