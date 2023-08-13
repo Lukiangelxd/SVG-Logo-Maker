@@ -3,6 +3,13 @@ const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shapes');
 const { validateColor, convertToHex } = require('./lib/colorUtils');
 
+function promptUser(question) {
+    return new Promise(resolve => {
+        rl.question(question, answer => {
+            resolve(answer);
+        });
+    });
+}
 
 function generateLogo(text, textColor, ShapeClass, shapeColor) {
     if (!validateColor(textColor) || !validateColor(shapeColor)) {
