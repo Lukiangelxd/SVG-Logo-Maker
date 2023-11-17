@@ -1,8 +1,14 @@
+<<<<<<< HEAD
 //constructs to import the required files needed for the code
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./lib/shape.js');
 const { validateColor, convertToHex, getSVG } = require('./lib/shapeColors.js');
 const inquirer = require('inquirer');
+=======
+import fs from 'fs/promises';
+import { Circle, Square, Triangle } from './lib/shapes.js';
+import inquirer from 'inquirer';
+>>>>>>> 7d8ebb0d382835ba05137a46e42c54fd58b7b494
 
 // Function to generate a logo SVG with specified text, text color, shape, and shape color.
 function generateLogo(text, textColor, shape, shapeColor) {
@@ -67,4 +73,8 @@ inquirer
     })
     .catch(error => {
         console.error('An error occurred:', error);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7d8ebb0d382835ba05137a46e42c54fd58b7b494
     });
