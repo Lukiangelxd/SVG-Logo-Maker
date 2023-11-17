@@ -16,6 +16,7 @@ The project is open for contributions. If you would like to contribute, create a
 
 ## Tests
 You can run a test of the code by using Jest (https://www.npmjs.com/package/jest) which is a javascript framework designed to ensure correctness of any Javascript code:
+Here is the video of me testing it!: https://drive.google.com/file/d/1cXh0yKEp-bD1_G8k8MweVIlKLC4mgcQN/view 
 
 1. Clone this repository `git clone`
 2. Install node js and npm ....https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
