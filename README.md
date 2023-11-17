@@ -11,8 +11,8 @@ The ReadMe has been created through the utilization of code sourced from the inq
 As demonstrated in the following steps, navigate to the repository folder you cloned using the command line, and execute 'node index.js'. Subsequently, you'll receive prompts to enter logo information, such as a three-letter logo test, text color (in either word or hex format), the selection of a shape, and input for the shape color (in either word or hex format). After completing these prompts, a new logo.svg file will be generated.
 
 
-## Contributing
-The project is open for contributions. If you would like to contribute, create a new branch from the main and add any updates as deemed necessary.
+## Contributing/ Help
+The project is open for contributions. If you would like to contribute, create a new branch from the main and add any updates as deemed necessary. Thanks to Gil for the assistance in understanding this assignment
 
 ## Tests
 You can run a test of the code by using Jest (https://www.npmjs.com/package/jest) which is a javascript framework designed to ensure correctness of any Javascript code:
